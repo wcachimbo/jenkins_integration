@@ -1,42 +1,14 @@
 package com.curso.docker;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.SpringApplication;
 
 
 @SpringBootApplication
 public class DemoApplication {
 
     public static void main(String[] args) {
-
-        int[] myarray = {1, 2, 9, 2, 5, 3, 5, 1, 5};
-        int sumaMenor = 1000;
-        String resp = "";
-
-        for (int i = 0; i < 3; i++) {
-            int val1 = myarray[i * 3 + 0];
-
-            for (int j = 0; j < 3; j++) {
-                if (j == i || j == i + 1 || j == i - 1) {
-                    int val2 = myarray[j * 3 + 1];
-
-                    for (int k = 0; k < 3; k++) {
-                        if (k == j || k == j + 1 || k == j - 1) {
-                            int val3 = myarray[k * 3 + 2];
-
-
-                            int sumActual = val1 + val2 + val3;
-                            if (sumActual < sumaMenor) {
-                                sumaMenor = sumActual;
-                                resp = val1 + " " + val2 + " " + val3;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        System.out.println(resp);
-
-
+        SpringApplication.run(DemoApplication.class, args);
     }
 
     /** EJERCICIO 3
@@ -125,6 +97,5 @@ public class DemoApplication {
 
  */
 }
-
 
 

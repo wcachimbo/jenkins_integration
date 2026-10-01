@@ -1,12 +1,9 @@
 package com.curso.docker;
 
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-@SpringBootApplication
 public class LambdaRecord {
     public static void main(String[] arg) {
 
